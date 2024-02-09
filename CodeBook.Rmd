@@ -1,0 +1,37 @@
+---
+title: "CodeBook"
+author: "Khalid JEAAB"
+date: "2024-02-09"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+Details of the Data Set
+
+Twenty-eight individuals between the ages of 19 and 48 participated in the experiments. Wearing a smartphone (Samsung Galaxy S II) around their waist, each participant engaged in six different activities: walking, walking upstairs, walking downstairs, sitting, standing, and lying down. We recorded 3-axial angular velocity and 3-axial linear acceleration at a steady rate of 50Hz using its integrated accelerometer and gyroscope. The trials were captured on camera so that the data could be manually labeled. The collected dataset was divided into two sets at random, with 70% of the volunteers chosen to provide training data and 30% to provide test data.
+
+Noise filters were used to pre-process the accelerometer and gyroscope sensor signals before sampling them in fixed-width sliding windows with a 50% overlap and a duration of 2.56 seconds (128 readings/window). Using a Butterworth low-pass filter, the sensor acceleration signal—which consists of both body motion and gravitational components—was divided into two categories: body acceleration and gravity. Since it is believed that the gravitational force solely consists of low frequency components, a filter with a cutoff frequency of 0.3 Hz was employed. A vector of features was derived from each window by computing variables in the frequency and time domains.
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
